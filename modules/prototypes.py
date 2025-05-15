@@ -23,8 +23,8 @@ class EncoderLayer(nn.Module):
             dropout: applied dropout value during training
             """
         super().__init__()
-        self.norm_1 = layers.Norm(d_model)
-        self.norm_2 = layers.Norm(d_model)
+        self.norm_1 = layers.PreNorm(d_model)
+        self.norm_2 = layers.PreNorm(d_model)
         self.attn = layers.MultiHeadAttention(heads, d_model, dropout=dropout)
         self.ff = layers.FeedForward(d_model, dropout=dropout)
         self.dropout_1 = nn.Dropout(dropout)
@@ -56,9 +56,9 @@ class DecoderLayer(nn.Module):
             dropout: applied dropout value during training
             """
         super().__init__()
-        self.norm_1 = layers.Norm(d_model)
-        self.norm_2 = layers.Norm(d_model)
-        self.norm_3 = layers.Norm(d_model)
+        self.norm_1 = layers.PreNorm(d_model)
+        self.norm_2 = layers.PreNorm(d_model)
+        self.norm_3 = layers.PreNorm(d_model)
 
         self.dropout_1 = nn.Dropout(dropout)
         self.dropout_2 = nn.Dropout(dropout)
@@ -115,7 +115,7 @@ class Encoder(nn.Module):
         self.embed = nn.Embedding(vocab_size, d_model)
         self.pe = layers.PositionalEncoder(d_model, dropout=dropout, max_seq_length=max_seq_length)
         self.layers = get_clones(EncoderLayer(d_model, heads, dropout), N)
-        self.norm = layers.Norm(d_model)
+        self.norm = layers.PreNorm(d_model)
 
         self._max_seq_length = max_seq_length
 
@@ -158,7 +158,7 @@ class Decoder(nn.Module):
         self.embed = nn.Embedding(vocab_size, d_model)
         self.pe = layers.PositionalEncoder(d_model, dropout=dropout, max_seq_length=max_seq_length)
         self.layers = get_clones(DecoderLayer(d_model, heads, dropout), N)
-        self.norm = layers.Norm(d_model)
+        self.norm = layers.PreNorm(d_model)
 
         self._max_seq_length = max_seq_length
 

@@ -25,7 +25,7 @@ class PositionalEncoder(nn.Module):
         @torch.jit.script
         def splice_by_size(source, target):
             """Custom function to splice the source by target's second dimension. Required due to torch.Size not a torchTensor. Why? hell if I know."""
-            length = target.size(1);
+            length = target.size(1)
             return source[:, :length]
 
         self.splice_by_size = splice_by_size
