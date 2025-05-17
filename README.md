@@ -6,6 +6,8 @@ Dự án MultilingualMT-UET-KC4.0 là dự án open-source được phát triể
 
 [Checkpoint](https://drive.google.com/drive/folders/1n4lHPPkLAqVqFRaue0i4oZNr_3cAOHIe)
 
+[Github 2](https://github.com/Tienbruse/Lo-Vi-NMT)
+
 # Setup
 ## Cài đặt công cụ Multilingual-NMT
 
