@@ -1,5 +1,10 @@
 Dự án MultilingualMT-UET-KC4.0 là dự án open-source được phát triển bởi nhóm UETNLPLab.
+
 [Slide](https://www.canva.com/design/DAGnfjkGtUA/m6DD-MbXEiyi3jsPBn3Msw/edit?utm_content=DAGnfjkGtUA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
+[Notebook](https://colab.research.google.com/drive/1gxz5bQ5JlpL2xwd2mYcC0ocyMw462P4a)
+
+[Checkpoint](https://drive.google.com/drive/folders/1n4lHPPkLAqVqFRaue0i4oZNr_3cAOHIe)
 
 # Setup
 ## Cài đặt công cụ Multilingual-NMT
