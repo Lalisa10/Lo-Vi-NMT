@@ -1,4 +1,8 @@
-Dự án MultilingualMT-UET-KC4.0 là dự án open-source được phát triển bởi nhóm UETNLPLab.
+# Bài tập lớn INT3406 1
+Danh sách thành viên:
+- Đặng Nguyễn Duy Trúc - 22021126
+- Phùng Quang Tiến - 	21020090
+- Kiều Minh Tuấn - 21020394
 
 [Slide](https://www.canva.com/design/DAGnfjkGtUA/m6DD-MbXEiyi3jsPBn3Msw/edit?utm_content=DAGnfjkGtUA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
